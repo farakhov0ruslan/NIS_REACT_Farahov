@@ -7,6 +7,8 @@
 **Требования:** Node.js LTS (рекомендуется 18.x или 20.x)
 
 ```bash
+# сделать чекаунт на HW_1
+
 # в папке HW_1
 npm ci          # или npm install
 npm start       # dev-сервер на http://localhost:3000
