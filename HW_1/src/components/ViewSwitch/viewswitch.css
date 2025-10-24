@@ -1,0 +1,2 @@
+.view-switch { display: inline-flex; gap: 8px; }
+.view-switch .segmented { width: 44px; text-align: center; }
