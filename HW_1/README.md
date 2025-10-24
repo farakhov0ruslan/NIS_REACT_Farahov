@@ -8,7 +8,8 @@
 
 ```bash
 # сделать чекаунт на HW_1
-
+git checkout HW_1
+cd ./HW_1
 # в папке HW_1
 npm ci          # или npm install
 npm start       # dev-сервер на http://localhost:3000
