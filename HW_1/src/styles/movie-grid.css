@@ -1,0 +1,20 @@
+.grid {
+    /* Мини и макс ширина карточки — регулируй под вкус */
+    --card-min: 180px;
+    --card-max: 220px;
+
+    display: grid;
+    /* Ключ: ограничиваем максимум колонки, чтобы 1–2 карточки не раздувались */
+    grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--card-min), min(100%, var(--card-max)))
+  );
+
+    gap: 16px;
+    justify-content: start;     /* лента “прижимается” к левому краю, как на Кинопоиске */
+    align-content: start;
+}
+
+@media (min-width: 1440px) {
+    .grid { --card-max: 240px; } /* чуточку крупнее на десктоп-xl */
+}
