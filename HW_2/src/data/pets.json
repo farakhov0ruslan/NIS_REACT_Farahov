@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pet-001",
+    "name": "NeonWhisker",
+    "species": "cyber-cat",
+    "mood": "happy",
+    "energy": 80,
+    "level": 5,
+    "avatar": "🐱"
+  },
+  {
+    "id": "pet-002",
+    "name": "ByteHound",
+    "species": "cyber-dog",
+    "mood": "neutral",
+    "energy": 65,
+    "level": 3,
+    "avatar": "🐶"
+  },
+  {
+    "id": "pet-003",
+    "name": "QuantumFeather",
+    "species": "robo-bird",
+    "mood": "happy",
+    "energy": 90,
+    "level": 7,
+    "avatar": "🦅"
+  },
+  {
+    "id": "pet-004",
+    "name": "DataFin",
+    "species": "nano-fish",
+    "mood": "neutral",
+    "energy": 70,
+    "level": 4,
+    "avatar": "🐠"
+  },
+  {
+    "id": "pet-005",
+    "name": "GlitchTail",
+    "species": "quantum-fox",
+    "mood": "tired",
+    "energy": 45,
+    "level": 6,
+    "avatar": "🦊"
+  },
+  {
+    "id": "pet-006",
+    "name": "CyberFang",
+    "species": "digital-wolf",
+    "mood": "happy",
+    "energy": 85,
+    "level": 8,
+    "avatar": "🐺"
+  },
+  {
+    "id": "pet-007",
+    "name": "PixelPaw",
+    "species": "cyber-cat",
+    "mood": "neutral",
+    "energy": 60,
+    "level": 2,
+    "avatar": "😺"
+  },
+  {
+    "id": "pet-008",
+    "name": "CircuitWing",
+    "species": "robo-bird",
+    "mood": "happy",
+    "energy": 75,
+    "level": 5,
+    "avatar": "🦜"
+  }
+]

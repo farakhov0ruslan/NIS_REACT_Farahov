@@ -1,0 +1,142 @@
+.petCard {
+  position: relative;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid #0f3460;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #00ffff;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00ffff, #ff00ff, #ffff00);
+    opacity: 0.6;
+  }
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  font-size: 4rem;
+  text-align: center;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+
+.info {
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffff;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  text-align: center;
+}
+
+.species {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin: 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mood {
+  font-size: 1rem;
+  color: #ffff00;
+  margin: 0.25rem 0;
+  font-weight: 500;
+
+  &::before {
+    content: '💭 ';
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+.progressBar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.disabledOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+
+  p {
+    color: #ff0000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
