@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 /HW_1/node_modules
+/HW_2/node_modules
+/HW_2/dist
 /.pnp
 .pnp.js
 
