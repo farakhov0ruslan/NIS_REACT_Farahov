@@ -1,0 +1,258 @@
+// Кибер-панк цветовая палитра
+$cyber-cyan: #00ffff;
+$cyber-magenta: #ff00ff;
+$cyber-yellow: #ffff00;
+$cyber-blue: #0099ff;
+$dark-bg: #0a0a0f;
+$dark-secondary: #1a1a2e;
+$dark-tertiary: #16213e;
+$border-color: #0f3460;
+
+// Глобальные переменные
+:root {
+  --cyber-cyan: #{$cyber-cyan};
+  --cyber-magenta: #{$cyber-magenta};
+  --cyber-yellow: #{$cyber-yellow};
+  --cyber-blue: #{$cyber-blue};
+  --dark-bg: #{$dark-bg};
+  --dark-secondary: #{$dark-secondary};
+  --dark-tertiary: #{$dark-tertiary};
+  --border-color: #{$border-color};
+}
+
+// Сброс и базовые стили
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $dark-bg;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+
+  // Киберпанк фон с анимацией
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(ellipse at top left, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(255, 0, 255, 0.05) 0%, transparent 50%),
+      linear-gradient(180deg, $dark-bg 0%, #0d0d14 50%, $dark-bg 100%);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  // Анимированная сетка на фоне
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+// Scrollbar стилизация
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, $cyber-cyan, $cyber-magenta);
+  border-radius: 6px;
+
+  &:hover {
+    background: linear-gradient(135deg, #33ffff, #ff33ff);
+  }
+}
+
+// Типография
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+code {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background: rgba(0, 255, 255, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+// Утилиты для layout
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+
+  &--2 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  &--3 {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  &--4 {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.flex {
+  display: flex;
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+}
+
+// Киберпанк эффекты
+.glow-text {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.neon-border {
+  border: 2px solid $cyber-cyan;
+  box-shadow:
+    0 0 5px $cyber-cyan,
+    inset 0 0 5px $cyber-cyan;
+}
+
+// Анимации
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+// Selection
+::selection {
+  background: rgba(0, 255, 255, 0.3);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(0, 255, 255, 0.3);
+  color: #fff;
+}
