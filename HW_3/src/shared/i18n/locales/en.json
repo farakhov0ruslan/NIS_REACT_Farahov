@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "username": "Username",
+    "password": "Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "loginHint": "Or register a new account",
+    "usernameRequired": "Username is required",
+    "passwordRequired": "Password must be at least 4 characters"
+  },
+  "products": {
+    "title": "Products",
+    "search": "Search products...",
+    "price": "Price",
+    "rating": "Rating",
+    "category": "Category",
+    "brand": "Brand",
+    "stock": "In stock",
+    "empty": "No products found",
+    "back": "Back to products",
+    "page": "Page {{current}} of {{total}}"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "pageSize": "Products per page",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "profile": {
+    "title": "Profile",
+    "fullName": "Full Name",
+    "email": "Email"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {{name}}!",
+    "totalProducts": "Total products",
+    "quickLinks": "Quick links"
+  },
+  "register": {
+    "title": "Register",
+    "firstNameRequired": "First name is required",
+    "lastNameRequired": "Last name is required",
+    "emailRequired": "Enter a valid email",
+    "userExists": "Username is already taken",
+    "success": "Account created successfully!",
+    "redirecting": "Redirecting to login..."
+  },
+  "errors": {
+    "invalidCredentials": "Invalid username or password",
+    "serverError": "Server error, please try again",
+    "notFound": "Page not found",
+    "loadingFailed": "Failed to load data"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "goHome": "Go to Dashboard",
+    "reload": "Reload"
+  }
+}

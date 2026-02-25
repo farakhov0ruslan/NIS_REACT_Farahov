@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "dashboard": "Главная",
+    "products": "Продукты",
+    "profile": "Профиль",
+    "settings": "Настройки",
+    "logout": "Выйти"
+  },
+  "auth": {
+    "login": "Вход",
+    "register": "Регистрация",
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "signIn": "Войти",
+    "signUp": "Зарегистрироваться",
+    "noAccount": "Нет аккаунта?",
+    "haveAccount": "Уже есть аккаунт?",
+    "loginHint": "Или зарегистрируйте новый аккаунт",
+    "usernameRequired": "Введите имя пользователя",
+    "passwordRequired": "Пароль должен быть не менее 4 символов"
+  },
+  "products": {
+    "title": "Продукты",
+    "search": "Поиск продуктов...",
+    "price": "Цена",
+    "rating": "Рейтинг",
+    "category": "Категория",
+    "brand": "Бренд",
+    "stock": "В наличии",
+    "empty": "Продукты не найдены",
+    "back": "Назад к продуктам",
+    "page": "Страница {{current}} из {{total}}"
+  },
+  "settings": {
+    "title": "Настройки",
+    "theme": "Тема",
+    "language": "Язык",
+    "pageSize": "Продуктов на странице",
+    "light": "Светлая",
+    "dark": "Тёмная"
+  },
+  "profile": {
+    "title": "Профиль",
+    "fullName": "Полное имя",
+    "email": "Email"
+  },
+  "dashboard": {
+    "title": "Главная",
+    "welcome": "Добро пожаловать, {{name}}!",
+    "totalProducts": "Всего продуктов",
+    "quickLinks": "Быстрые ссылки"
+  },
+  "register": {
+    "title": "Регистрация",
+    "firstNameRequired": "Введите имя",
+    "lastNameRequired": "Введите фамилию",
+    "emailRequired": "Введите корректный email",
+    "userExists": "Это имя пользователя уже занято",
+    "success": "Аккаунт успешно создан!",
+    "redirecting": "Переход на страницу входа..."
+  },
+  "errors": {
+    "invalidCredentials": "Неверное имя пользователя или пароль",
+    "serverError": "Ошибка сервера, попробуйте ещё раз",
+    "notFound": "Страница не найдена",
+    "loadingFailed": "Не удалось загрузить данные"
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Что-то пошло не так",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "back": "Назад",
+    "goHome": "На главную",
+    "reload": "Перезагрузить"
+  }
+}
